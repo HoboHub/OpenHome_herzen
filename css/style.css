@@ -1,0 +1,671 @@
+
+/* Общие стили */
+body {
+	font-family: Raleway, sans-serif;
+	margin: 0;
+	padding: 0;
+	padding: 30px;
+	/*width: cover;*/
+	/*height: 100%;*/
+	background-color: orange;
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+input:invalid {
+	/*border-color: red;*/
+}
+
+input:valid {
+	border: 1px solid green;
+	/*background-color: #D5F4B7;*/
+}
+
+.btn {
+	border: none !important;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 6px;
+	position: relative;
+}
+
+.return__btn {
+	background-color: #fff;
+	box-shadow: 0px 0px 4px lightgrey;
+}
+
+.return__btn_link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*reset or close button in frames*/
+.cancel_frame_btn {
+	/*background-color: #FF3D41;*/
+}
+
+.visible_block {
+	display: block !important;
+}
+
+.popup_block {
+	padding: 20px 25px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 1px 4px lightgrey;
+	/*----------------------------------------------------*/
+}
+
+/* Конец общих стилей */
+
+.bg {
+	position: absolute;
+	background-color: #FAFBFC;
+	width: 100%;
+	min-height: 100%;
+	left: 0;
+	padding: 10px 30px;
+}
+
+.topline {
+	width: cover;
+	height: 65px;
+	margin: 0;
+	padding: 0;
+}
+
+.main_logo {
+	width: 19%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;		
+	margin-bottom: 20px;
+}
+
+.main_title {
+	color: #ffff;
+}
+.logo {
+	max-width: 35px;
+}
+
+/*top menu*/
+.main_mnu {
+	display: flex;
+	float: right;
+	min-width: 150px;
+	max-height: 40px;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+
+/*rooms (add and change)*/
+.mainroom {
+	padding: 20px; /*for drag&drop*/
+	/*display: inline-flex;*/
+	/*border: none;*/
+	border-radius: 10px;
+	margin: 5px;
+	box-shadow: 1px 1px 6px #d5e1ed;   /*ИЗМЕНИТЬ ЦВЕТ ТЕНЕЙ У комнат  */
+	background-color: #fff;
+}
+
+.mainroom__content {
+	display: inline-flex;
+	border: none;
+	/*border-radius: 10px;*/
+}
+
+.mainroom_link {
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	width: 100%; 
+	height: 100%;
+}
+
+.mainroom__icon {
+	width: 30px;
+	margin-right: 10px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: start;
+}
+
+.mainroom__name {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 8px;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.add_room {
+	z-index: 2132;
+	position: relative;
+}
+
+.add_room__open:before {
+	content: '';
+	display: block;
+	position: relative;
+	top: -30px;
+	left: 250px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid #fff;
+}
+
+.add_room__header {
+	/*margin-top: 15px;*/
+	margin-bottom: 15px;
+	margin-top: -5px;
+}
+
+.add_room_btn__wrapper {
+	width: 45px;
+	height: 50px;
+	background-color: transparent;
+	/*opacity: .5;*/
+	position: absolute;
+	left: 5px;
+	/*top: -2px;*/
+	cursor: pointer;
+	z-index: 3423;
+}
+
+.add_room_btn {
+	fill: #fff;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.add_room__open {
+	position: absolute;
+	right: -15px;
+	top: 50px;
+	min-width: 260px;
+	display: none;
+}
+
+.add_room__open.visible {
+	display: block !important;
+}
+
+.create_room_input {
+	border: 1px solid lightgrey;
+	background-color: #FAFBFC;
+	margin-top: 5px;
+	width: 90%;
+}
+
+/*.create_room_label {
+	margin-bottom: 50px;
+}
+*/
+.create_room_btn {
+	background-color: #7030A0;
+	color: #fff;
+	margin-top: 20px;
+}
+
+.cancel_room_btn {
+
+}
+
+.room_type_radio {
+	-webkit-appearance: none;
+	-moz-appearance:none;
+	appearance:none;
+	border: none !important;
+}
+
+.room_type_label {
+	display: inline-block;
+	border-radius: 5px;
+	position: relative;
+	padding: 5px 10px;
+	border: 2px solid lightgrey;
+	position: relative;
+	top: 10px;
+	right: 28px;
+	cursor: pointer;
+	margin-right: -20px;
+}
+
+.room_type_radio:checked + label {
+	background-color: #94E794;
+	border: 2px solid #00D600;
+}
+
+/*end room*/
+
+
+/*settings*/
+.settings {
+	fill: #fff;
+}
+.settings:hover {
+	/*fill: #7030A0;*/
+	cursor: pointer;
+}
+
+.settings__open.visible {
+	display: block !important;
+}
+
+.settings__open {
+	position: absolute;
+	top: 50px;
+	right: 25px;
+	z-index: 926;
+	display: none;
+	min-width: 200px;
+}
+
+.settings__open:before {
+	content: '';
+	display: block;
+	position: relative;
+	top: -30px;
+	left: 170px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid #fff;
+}
+
+.settings_header {
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+
+.settings_theme_label {
+}
+
+.theme_type_radio {
+	cursor: pointer;
+}
+
+.themem_type_label {
+	cursor: pointer;
+}
+
+.settings_submit {
+	background-color: #7030A0;
+	color: #fff;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+
+.settings_btn__wrapper {
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	/*opacity: .5;*/
+	position: absolute;
+	left: 60px;
+	top: 0px;
+	cursor: pointer;
+	z-index: 3429;	
+}
+
+.settings_btn {
+}
+
+/*----------*/
+
+/*Добавление нового блока*/
+.add_block {
+	fill: #fff;
+}
+.add_block>svg:hover {
+	/*fill: #fff;*/
+	cursor: pointer;
+}
+.add_block__open {
+	position: absolute;
+	top: 50px;
+	right: -14px;
+	z-index: 923;
+	display: none;
+	min-width: 200px;
+}
+
+.add_block__open.visible {
+	display: block !important;
+}
+
+.add_block__open:before {
+	content: '';
+	display: block;
+	position: relative;
+	top: -30px;
+	left: 180px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 15px solid #fff;
+}
+
+.add_block__header {
+	margin-bottom: 10px;
+	margin-top: -15px;
+}
+
+/* svg wrapper (+)*/
+.add_block__btn {
+	display: block; 
+	background-color: transparent; 
+	width: 30px; 
+	height: 30px; 
+	position: absolute;
+	right: 7px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+/*-------------------*/
+
+.create_frame_input {
+	margin-top: 5px;
+	border: 1px solid lightgrey;
+	/*border: none;*/
+	background-color: #FAFBFC;
+	/*border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;*/
+	width: 90%;
+} 
+.class_input {
+
+} 
+.ip_input {
+
+}
+
+.create_frame_btn {
+	background-color: #8ade8a /*#94E794*/;
+	color: #fff;
+}
+/*top menu end*/
+
+/*update frame */
+.update_block__open {
+	/*padding: 20px 25px;*/
+	/*background-color: #fff;*/
+	/*border-radius: 5px;*/
+	position: absolute;
+	z-index: 923;
+	/*box-shadow: 0px 1px 4px lightgrey;*/
+	display: none;
+}
+
+.update_block__open.visible {
+	display: block !important;
+}
+
+.update_frame_btn {
+	background-color: #FECB01;
+	color: #fff;
+}
+
+.update_block__header {
+	margin-bottom: 10px;
+}
+/*update frame end*/
+
+.mainframe {
+	padding: 20px; /*for drag&drops*/
+	display: inline-flex;
+	/*align-items: flex-start;*/
+	border: none;
+	border-radius: 10px;
+	margin: 5px;
+	box-shadow: 1px 1px 10px #d5e1ed;   /*ИЗМЕНИТЬ ЦВЕТ ТЕНЕЙ У ФРЕЙМОВ  */ /* #cad9e8 #dde5ed #d1dfed #d5e1ed*/
+	background-color: #fff;
+}
+
+.mainframe_content {
+	border: none;
+	height: 100%; 
+	width: 100%;
+}
+
+
+.frame_stat {
+	position: absolute; 
+	top: -25px; 
+	left: 0px; 
+	display: none;
+	background-color: #fff;
+	/*padding-right: 5px;*/
+	/*padding-bottom: 3px;*/
+	border-radius: 10px 10px 5px 5px;
+	padding: 5px;
+	font-size: 14px;
+	box-shadow: 0px -2px 3.5px #d5e1ed;
+}
+
+.weather_frame {
+	width: 620px;
+	height: 350px;
+	/*background-color: #fff;*/
+}
+.reley_frame {
+	/*width: 400px;*/
+	height: 190px;
+	/*background-color: #ffff;*/
+}
+
+.city_weather_frame {
+	/*width: 400px;*/
+	height: 190px;
+	padding: 20px 15px;
+	padding-left: 60px;
+	/*background-color: #ffff;*/
+	position: relative;
+}
+
+.cityWeatherImg {
+	width: 15%;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+
+.sun_position_frame {
+	/*background-color: #ffff;*/
+	height: 100px;
+	padding: 20px;
+	display: flex
+}
+.sun__icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-right: 20px;
+}
+.sunstate {
+	margin-top: 5px;
+	line-height: 3.0;
+}
+
+/*clock frame*/
+.clock_frame {
+	position: absolute;
+	min-width: 120px;
+	/*left: 100px !important;*/
+	/*top: 100px !important;*/
+	/*width: 500px !important;*/
+}
+
+.clock_frame>svg {
+	display: inline-flex;
+	align-items: center;
+}
+
+.clock_frame_text {
+	display: inline-flex;
+	margin-left: 15px;
+	/*padding: 10px;*/
+	min-width: 75px;
+	align-items: center;
+	font-weight: bold;
+}
+/**/
+
+.content {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: cover;
+	width: 95%; /*chrome. for element not to go outside page view*/
+}
+
+.room__content {
+	height: 100vh;
+	width: 95%;
+}
+
+/*db content*/
+.Db__content_wrapper {
+	/*position: relative;*/
+}
+
+.frameDb__content {
+	/*position: absolute;*/
+	/*position: relative;*/
+	/*width: 50vw;*/
+}
+
+.roomDb__content {
+	/*position: absolute;*/
+	/*width: 50vw;*/
+}
+
+/**/
+
+/*initial size of added frame*/
+.room_initial {
+	min-width: 130px;
+	min-height: 40px;
+	/*width: 250px;*/
+	/*height: 100px;*/
+}
+
+.frame_initial {
+	min-width: 130px;
+	min-height: 90px;
+	/*--*/
+	width: 350px;
+	height: 200px;
+}
+/**/
+
+.resizable_content {
+	
+}
+
+
+/*CUSTOM MENU CSS*/
+.custom-menu {
+	display: none;
+	z-index: 1000;
+	position: absolute;
+	overflow: hidden;
+	/*border: 1px solid #CCC;*/
+	white-space: nowrap;
+	font-family: sans-serif;
+	background: #FFF;
+	color: #333;
+	border-radius: 5px;
+	padding: 0;
+	box-shadow: 0px 0px 5px lightgrey;
+}
+
+/* Each of the items in the list */
+.custom-menu__item {
+	padding: 8px 12px;
+	cursor: pointer;
+	list-style-type: none;
+	transition: all .3s ease;
+	user-select: none;
+	display: flex;
+}
+
+.custom-menu__item:hover {
+	background-color: #DEF;
+}
+
+.custom-menu__item>svg {
+	display: inline-flex;
+	/*align-items: center;*/
+	justify-content: center;
+}
+
+.custom-menu__text {
+	display: inline-flex;
+	align-self: center;
+	justify-content: center;
+	margin-left: 4px;
+	margin-top: 5px;
+}
+
+
+.content_block_custom {
+	display: none;
+}
+
+.iframe_custom {
+	/*overflow: hidden;*/
+	display: none;
+}
+
+.room_custom {
+	display: none;
+}
+/**/
+
+
+/*template (room)*/
+.template_svg_wrapper {
+	right: 20px;
+	/*left: 60px;*/
+	/*top: 4px;*/
+}
+
+.template_add_block__open {
+	/*right: 40px;*/
+	right: 0px;
+}
+
+.template_settings_btn__wrapper {
+	left: 20px;
+}
+
+.template_settings__open {
+	right: 65px;
+}
+/**/

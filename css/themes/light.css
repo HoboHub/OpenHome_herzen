@@ -1,0 +1,25 @@
+body {
+	background-color: #FAFBFC !important;
+	color: #000;
+}
+
+.main_title {
+	color: #000 !important;
+}
+
+.main_mnu > div {
+	fill: #000 !important;
+}
+
+.main_mnu > .add_room > div {
+	fill: #000 !important;
+}
+
+
+.bg {
+	/*background-color: #191920;*/
+}
+
+.mainframe, .mainroom {
+	/*box-shadow: 0px 0px 5px #816299;*/
+}
