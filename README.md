@@ -19,6 +19,7 @@ Open Home
 - HTML
 - CSS
 - JavaScript
+- JQuery UI (Draggable)
 
 ### Микроконтроллер:
 - Arduino IDE
@@ -96,3 +97,16 @@ Open Home
 ## 🎥 Preview:
 - Удаленное управление розеткой с лампой в качестве нагрузки
 <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXljZ2I4amw4Zjd3dnNld3cxYXJvNGhjODkyNTVmamN0ZWZraWt4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c2EjIMNOWVHYg5zGAD/giphy.gif" title="Smart Socket" alt="Iot Remote socket"/>
+
+
+- Создание фрейма
+  
+![media4_upload](https://github.com/user-attachments/assets/b65438cd-1f20-4297-bb7e-77296eb91b22)
+
+
+- Создание и работа с комнатами
+  
+![media5_upload](https://github.com/user-attachments/assets/423993fc-8129-4220-bcb8-9b1c2924c510)
+
+
+
