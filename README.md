@@ -91,4 +91,6 @@ Open Home
 ![Диаграмма последовательности](https://github.com/user-attachments/assets/b93829f4-2e87-4756-817d-11bc007d7415)
 
 
-
+## 🎥 Preview:
+- Удаленное управление розеткой с лампой в качестве нагрузки
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXljZ2I4amw4Zjd3dnNld3cxYXJvNGhjODkyNTVmamN0ZWZraWt4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/c2EjIMNOWVHYg5zGAD/giphy.gif" title="Smart Socket" alt="Iot Remote socket"/>
