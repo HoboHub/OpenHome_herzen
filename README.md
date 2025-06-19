@@ -14,6 +14,8 @@ Open Home
 ### Backend:
 - PHP
 - SQL
+- MySQL
+- PhpMyAdmin/OpenServer
 
 ### Frontend:
 - HTML
